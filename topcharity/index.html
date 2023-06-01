@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap');
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		padding: 10px;
+		font-family: 'Nunito Sans', sans-serif;
+		color: #404040;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	#organizations {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	
+	.organization {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.organization .logo {		
+		width: 118px;
+		height: 82px;
+		float: left;
+		margin-right: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+		
+	.organization .logo img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.organization h3 {
+		font-size: 16px;
+		font-weight: 800;
+		color: #DDAC61;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	
+	.organization h3 a {
+		text-decoration: underline;
+		color: #DDAC61;
+	}
+	
+	.organization p {
+		text-align: justify;
+	} 
+	
+	.organization .description {
+		height: 82px;
+		overflow: hidden;
+	}
+	
+	.organization .signature {
+		display: block;
+		margin-top: 10px;
+		font-style: italic;
+		font-weigh: 700;
+		text-align: right;
+	}
+	
+	.organization button.more {
+		font-size: 12px;
+		font-weight: 700;
+		color: #15143F;
+		background-color: #DDAC61;
+		border-radius: 13px;
+		line-height: 16px;
+		padding: 5px 10px;
+		border: none;
+		margin-top: 10px;
+		cursor: pointer;
+		transition-duration: 250ms;
+		margin-left: auto;
+	}
+	
+	.organization button:hover {
+		background-color: #15143F;
+		color: #DDAC61;
+	}
+	
+	@media screen and (max-width: 425px) {
+		.organization h3 {
+			font-size: 14px;
+		}
+		
+		.organization .logo {		
+			width: 88px;
+		}
+	}
+</style>
+	
+<script type="text/javascript">
+	window.onload = (event) => {
+		const moreButtons = document.getElementsByClassName('more');
+
+		for (const moreButton of moreButtons) {
+			moreButton.addEventListener('click', (event) => {
+				event.target.previousElementSibling.style.height = "auto";
+				event.target.remove();
+				
+			});
+		}
+	};	
+</script>
+<body>
+	<div id="organizations">
+		<div class="organization">			
+			<div class="description">
+				<div class="logo">
+					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/353869/b4f5e933-977c-4822-9bac-0ae829e8d851.jpg" alt="" />
+				</div>			
+				<h3><a href="https://www.facebook.com/nosduoostrzeszow/" target="blank">Fundacja im. Ks. Kanonika Zdzisława Sobierajskiego Nos Duo</a></h3>			
+				<p>Twarze ludzi, którym pomagamy, nie są mi obce. Wiem, jaki ciężar niosą przez życie. Jeśli mogę podarować ulgę, wytchnienie, jestem gotowa działać.
+					<br/>Fundacja Nosduo powstała 6 lat temu. To była piękna odpowiedź mojego teścia na wołanie potrzeby jego serca. Naszą drogę rozpoczęliśmy od pomocy osobom starszym. W ciągu tych kilku lat udało się również pomóc wielu dzieciom, matkom, rodzinom z naszej okolicy. Czasami Potrzebujący zgłaszają się sami, czasami znajdujemy ich my. Bo nie każdy ma odwagę podejść, porozmawiać, poprosić o pomoc. Zdarza się, że to my pukamy do ich drzwi.<br/>Towarzyszy mi wiele inspirujących kobiet, tych, które jak ja czerpią energię ze zmieniania świata, jak i tych, których codzienność wymaga wsparcia. Porusza mnie dogłębnie obraz kobiety poświęcającej swoje życie opiece nad chorym dzieckiem. Znam historie, gdy taka kobieta koniec końców zostaje sama – bez dziecka i odklejona od siebie. Wyzerowana. Chciałabym móc pojawić się gdzieś na ścieżce walki takiej kobiety - opiekunki. Podarować jej wytchnienie, nadzieję, wsparcie.
+					<br/>To mój wymarzony projekt. Czas, podczas którego pomagamy dzieciakom, ale również mamom, kobietom, żonom, przyjaciółkom…człowiekowi …bohaterkom dnia codziennego.  Dawać poczucie, że je widzimy, że są dla naszej społeczności ważne, są jej nieodłączną i piękna częścią. Zatroszczyć się o nie i w imieniu ich dzieci powiedzieć „dziękuję”.”</p>
+				<span class="signature">Marta Raczyńska-Dejneka -  Prezes Fundacji Nos Duo</span>
+			</div>
+			<button class="more">Pokaż więcej</button>
+		</div>
+		<div class="organization">			
+			<div class="description">
+				<div class="logo">
+					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/353941/9e041190-951c-4d6b-837e-59099b5a8e37.png" alt="" />
+				</div>			
+				<h3><a href="https://fundacjaembrace.pl/" target="blank">Fundacja Embrace</a></h3>			
+				<p>Niesienie pomocy innym zawsze było mi bardzo bliskie i stanowiło ważny aspekt mojego życia. To cudowne uczucie, gdy jesteś w stanie zrobić coś dla drugiego człowieka. Gdy to właśnie Twoje dwie ręce podarowały komuś nowe, lepsze życie lub Twoje działania wyzwoliły w drugiej osobie chęć do walki, do pracy, do niegodzenia się na niekiedy okrutny los. Każdy z nas posiada w sobie niespożyte zasoby energii, jednak nie każdy ma to szczęście spotkać na drodze dobre osoby, które pomogą mu w jej wyzwoleniu. 
+				<br/>Ja miałam tę możliwość i chciałabym przekazać ją dalej. Szczególnie że sama tego doświadczyłam. Byłam samotną mamą, która szukała pomocy. Wiem, z czym mierzą się takie kobiety i jakie uczucia im towarzyszą. Mi udało się wyjść z trudnej sytuacji. Teraz chcę pomóc innym, ale nie tylko wspierając finansowo. Ważne jest też wsparcie niematerialne, wskazanie możliwości oraz pomoc w odnalezieniu motywacji do działania. Właśnie dlatego powstała Fundację Embrace. Aby dawać szanse, pokazywać, że można, inspirować, motywować, rozwijać przez organizowane warsztaty, kursy, szkolenia i spotkania, ale też oferować wsparcie prawne, psychologiczne i doradztwo od najlepszych specjalistów. Udało mi się poznać i zrzeszyć kobiety, które miały podobne wartości i od początku 2022 roku działamy razem dla innych kobiet.</p>
+			</div>
+			<button class="more">Pokaż więcej</button>
+		</div>
+		<div class="organization">			
+			<div class="description">
+				<div class="logo">
+					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/353938/1e1bd029-abe1-43ce-9c8a-8f72a5c63ef3.png" alt="" />
+				</div>			
+				<h3><a href="https://fundacjarodzinymaj.pl/" target="blank">Fundacji Rodziny Maj</a></h3>			
+				<p>Pomagaliśmy od samego początku. Po cichu i w ukryciu. Przez długi czas obawialiśmy się opinii takich, których stać na luksus pomagania, bo sami mają świetlane życie. Marzyliśmy o założeniu fundacji, która ułatwiłaby nasze działania, lecz obawy o odbiór społeczny „skutecznie” nas powstrzymywały. A chcieliśmy tylko jednego – po prostu pomagać.
+				<br/>Życie to fala, wzbijająca się i opadająca. Śmierć Piotra, mojego ukochanego szwagra, nie mogła być końcem. Wyrwała nam serca z piersi, ale to właśnie ten ból skłonił nas do czynu i do przekraczania własnych lęków. 
+				<br/>Tak właśnie narodziła się Fundacja Rodziny Maj imienia Piotra Maja
+				<br/>Nie przesadzę, mówiąc, że kocham pomagać. Moje serce bije w rytm empatii, głęboko zakorzenionej w potrzebie działania. Gdy wojna rozpętała się w Ukrainie, nie mogłam siedzieć bezczynnie. Byłam gotowa ruszyć, niezależnie od godziny, niezależnie od zmęczenia. I zrobiliśmy to. 
+				<br/>Nasza fundacja nie zna granic. Wspieraliśmy ofiary pożarów, chorych, biednych i bezdomnych. Jednak dzieci są mi szczególnie bliskie. Niesienie pomocy maluchom onkologicznym, także nieuleczalnie chorym, jest tym, co pomaga mi utrzymywać serce w jednym kawałku. 
+				<br/>Bardzo zależy naszej Fundacji na wsparciu Oddziału Onkologii i Hematologii Dziecięcej Szpitala Dziecięcego w Krakowie. Wiem, jak ogromną determinację, by ratować życie, mają osoby tam pracujące. I wiem, jakiego wsparcia potrzebują, by móc w pełni rozwinąć skrzydła. Świadomość, że można ulżyć w cierpieniu, a nawet podnieść szanse na życie chociaż jednego dziecka – nie pozwala mi na bycie bierną.
+				<br/>A ponieważ zawsze jest dobry moment, aby dołączyć i razem z nami pomagać, to poruszę niebo i ziemię, by zapewnić dzieciom leczenie na jak najwyższym poziomie.</p>
+			</div>
+			<button class="more">Pokaż więcej</button>
+		</div>
+		<div class="organization">			
+			<div class="description">
+				<div class="logo">
+					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/353935/6fc3edb7-c056-4eef-9da3-aedf2908eb66.png" alt="" />
+				</div>			
+				<h3><a href="https://mrmfundacja.pl/" target="blank">Fundacja MRM</a></h3>			
+				<p>Byłam jedną z Was. Moim marzeniem było zostać mamą. Dzięki in vitro mi się udało. Rodzicielstwo może być najpiękniejszą przygodą życia, jednak wiele par o tę przygodę musi zawalczyć…
+				<br/>Moja walka zakończyła się zwycięstwem - dlatego dziś czuję, że moim obowiązkiem i misją stało się wspieranie innych w walce z niepłodnością. 
+				<br/>Wiem, że upowszechnienie i odkłamanie tematu in vitro ułatwi przyszłym rodzicom korzystanie z najnowszych osiągnięć nauki. 
+				<br/>Niepłodność dotyka już 1,5 miliona polskich par – zarówno mężczyzn, jak i kobiet.
+				<br/>Dlatego jestem. Dlatego działam. 
+				<br/>Dlatego powstała Fundacja MRM. 
+				<br/>Jako Mama, kobieta - chcę promować macierzyństwo, rodzicielstwo, chcę zabiegać o pomoc państwa w tym zakresie. 
+				<br/>Nasza Fundacja działa na rzecz wyrównywania dostępu do specjalistycznych usług medycznych. Inicjujemy, promujemy i wspieramy działania szkoleniowe i edukacyjne umożliwiające rozpoznawanie płodności oraz leczenie niepłodności. Temat, o którym wciąż tak trudno mówić głośno. Chcemy skończyć z tabu - promujemy, edukujemy, inspirujemy i organizujemy wolontariat.</p>
+			</div>
+			<button class="more">Pokaż więcej</button>
+		</div>
+	</div>
+</body>
+</html>
