@@ -18,6 +18,7 @@
 		color: #404040;
 		font-size: 14px;
 		line-height: 18px;
+		-webkit-text-size-adjust: 100%;
 	}
 	
 	#organizations {
@@ -107,6 +108,16 @@
 		
 		.organization .logo {		
 			width: 88px;
+		}
+	}
+	
+	@media screen and (max-width: 350px) {
+		.organization h3 {
+			font-size: 12px;
+		}
+		
+		.organization .logo {		
+			width: 68px;
 		}
 	}
 </style>
