@@ -4,124 +4,108 @@
 <meta charset="UTF-8">
 <title></title>
 </head>
+
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap');
-	
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	
-	body {
-		padding: 10px;
-		font-family: 'Nunito Sans', sans-serif;
-		color: #404040;
-		font-size: 14px;
-		line-height: 18px;
-		-webkit-text-size-adjust: 100%;
-	}
-	
-	#organizations {
-		display: flex;
-		flex-direction: column;
-		row-gap: 30px;
-	}
-	
-	.organization {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.organization .logo {		
-		width: 118px;
-		height: 82px;
-		float: left;
-		margin-right: 24px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-		
-	.organization .logo img {
-		width: 100%;
-		height: auto;
-	}
-	
-	.organization h3 {
-		font-size: 16px;
-		font-weight: 800;
-		color: #DDAC61;
-		text-transform: uppercase;
-		margin-bottom: 10px;
-	}
-	
-	.organization h3 a {
-		text-decoration: underline;
-		color: #DDAC61;
-	}
-	
-	.organization p {
-		text-align: justify;
-	}
-	
-	.organization p + p {
-		margin-top: 10px;			
-	}
-	
-	.organization .description {
-		height: 82px;
-		overflow: hidden;
-	}
-	
-	.organization .signature {
-		display: block;
-		margin-top: 10px;
-		font-style: italic;
-		font-weight: 700;
-		text-align: right;
-	}
-	
-	.organization button.more {
-		font-size: 12px;
-		font-weight: 700;
-		color: #15143F;
-		background-color: #DDAC61;
-		border-radius: 13px;
-		line-height: 16px;
-		padding: 5px 10px;
-		border: none;
-		margin-top: 10px;
-		cursor: pointer;
-		transition-duration: 250ms;
-		margin-left: auto;
-	}
-	
-	.organization button:hover {
-		background-color: #15143F;
-		color: #DDAC61;
-	}
-	
-	@media screen and (max-width: 425px) {
-		.organization h3 {
-			font-size: 14px;
-		}
-		
-		.organization .logo {		
-			width: 88px;
-		}
-	}
-	
-	@media screen and (max-width: 350px) {
-		.organization h3 {
-			font-size: 12px;
-		}
-		
-		.organization .logo {		
-			width: 68px;
-		}
-	}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #404040;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-text-size-adjust: 100%;
+}
+#organizations {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.organization {
+    display: flex;
+    flex-direction: column;
+}
+.organization .logo {
+    width: 118px;
+    height: 82px;
+    float: left;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.organization .logo img {
+    width: 100%;
+    height: auto;
+}
+.organization h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #DDAC61;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.organization h3 a {
+    text-decoration: underline;
+    color: #DDAC61;
+}
+.organization p {
+    text-align: justify;
+}
+.organization p + p {
+    margin-top: 10px;
+}
+.organization .description {
+    height: 82px;
+    overflow: hidden;
+}
+.organization .signature {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: right;
+}
+.organization button.more {
+    font-size: 12px;
+    font-weight: 700;
+    color: #15143F;
+    background-color: #DDAC61;
+    border-radius: 13px;
+    line-height: 16px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 250ms;
+    margin-left: auto;
+}
+.organization button:hover {
+    background-color: #15143F;
+    color: #DDAC61;
+}
+
+@media screen and (max-width: 425px) {
+.organization h3 {
+    font-size: 14px;
+}
+.organization .logo {
+    width: 88px;
+}
+}
+
+@media screen and (max-width: 350px) {
+.organization h3 {
+    font-size: 12px;
+}
+.organization .logo {
+    width: 68px;
+}
+}
 </style>
-	
 <script type="text/javascript">
 	window.onload = (event) => {
 		const moreButtons = document.getElementsByClassName('more');
@@ -136,235 +120,158 @@
 	};	
 </script>
 <body>
-	<div id="organizations">
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354148/c7fe25a8-2975-402f-a2cf-95f94370b031.png" alt="Fundacja Im. Ks. Kanonika Zdzisława Sobierajskiego Nos Duo" />
-				</div>			
-				<h3><a href="https://www.facebook.com/nosduoostrzeszow/" target="blank">Fundacja Im. Ks. Kanonika Zdzisława Sobierajskiego Nos Duo</a></h3>
-				<p><strong>Twarze ludzi, którym pomagamy, nie są mi obce. Wiem, jaki ciężar niosą przez życie. Jeśli mogę podarować ulgę, wytchnienie, jestem gotowa działać.</strong></p>
-				<p>Fundacja Nos Duo powstała 6 lat temu. To była piękna odpowiedź mojego teścia na wołanie potrzeby jego serca. Naszą drogę rozpoczęliśmy od pomocy osobom starszym. W&nbsp;ciągu tych kilku lat udało się również pomóc wielu dzieciom, matkom, rodzinom z&nbsp;naszej okolicy. Czasami Potrzebujący zgłaszają się sami, czasami znajdujemy ich my. Bo nie każdy ma odwagę podejść, porozmawiać, poprosić o&nbsp;pomoc. Zdarza się, że to my pukamy do ich drzwi.</p>
-				<p><strong>Towarzyszy mi wiele inspirujących kobiet, tych, które jak ja czerpią energię ze zmieniania świata, jak i&nbsp;tych, których codzienność wymaga wsparcia.</strong> Porusza mnie dogłębnie obraz kobiety poświęcającej swoje życie opiece nad chorym dzieckiem. Znam historie, gdy taka kobieta koniec końców zostaje sama – bez dziecka i&nbsp;odklejona od siebie. Wyzerowana. Chciałabym móc pojawić się gdzieś na ścieżce walki takiej kobiety - opiekunki. Podarować jej wytchnienie, nadzieję, wsparcie.</p>
-				<p><strong>To mój wymarzony projekt. Czas, podczas którego pomagamy dzieciakom, ale również mamom, kobietom, żonom, przyjaciółkom… człowiekowi… bohaterkom dnia codziennego.</strong> Dawać poczucie, że je widzimy, że są dla naszej społeczności ważne, są jej nieodłączną i&nbsp;piękna częścią. Zatroszczyć się o&nbsp;nie i&nbsp;w imieniu ich dzieci powiedzieć „dziękuję”.”</p>
-				<span class="signature">Marta Raczyńska-Dejneka - Prezes Fundacji Nos Duo</span>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>		
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354160/6cb6ee4b-2610-4792-a615-cee27eb9676b.png" alt="Fundacja ZOBACZ MNIE" />
-				</div>			
-				<h3><a href="https://zobaczmnie.org/" target="blank">Fundacja ZOBACZ MNIE</a></h3>
-				<p><strong>Każda historia pomocy ma swój początek. Moment, w&nbsp;którym rodzi się myśl, i&nbsp;to ona pewnego dnia pociąga za sobą serię zdarzeń.</strong> Dla mnie było to spotkanie z&nbsp;małym, samotnym chłopcem, który od urodzenia leżał w&nbsp;szpitalu. Nie musiał tam być. Gdyby tylko miał rodzinę, po kilku dniach pobytu mógłby wrócić do domu. No tak, ale najpierw trzeba dom mieć. A ten kilkumiesięczny chłopiec był niczyj i&nbsp;znikąd.</p>
-				<p>Nie mogłam przestać o&nbsp;nim myśleć – do dziś mam jego zdjęcie w&nbsp;telefonie. Postanowiłam nagłośnić tę historię i&nbsp;pomóc znaleźć dla niego rodzinę. Zaangażowałam media – telewizja i&nbsp;radio nadawały całodzienny program i&nbsp;tak znaleźliśmy mamę i&nbsp;tatę dla porzuconego, chorego dziecka. Dziś jego dom jest w&nbsp;Warszawie, a&nbsp;ja razem z&nbsp;fundacyjnym zespołem staram wspomóc system w&nbsp;opiece nad opuszczonymi noworodkami i&nbsp;niemowlętami.</p>
-				<p><strong>Interwencyjny Ośrodek Preadopcyjny to nie jest dobra nazwa. Ja powiedziałabym „Pierwszy Dom”.</strong></p>
-				<p>Razem z&nbsp;zespołem wspaniałych specjalistów zapewnimy najwyższe standardy opieki, diagnostyki i&nbsp;wsparcia dzieci w&nbsp;okresie, w&nbsp;którym są zupełnie bezbronne i&nbsp;potrzebują największej czułości.</p>
-				<p>Biologicznym mamom, które nie podołały swojej nowej roli, zapewnimy wsparcie psychologiczne i&nbsp;mentalne. Okazana cierpliwość i&nbsp;wypracowany wzorzec opieki dadzą szansę, że po pierwszym szoku jednak będą gotowe na stworzenie rodziny i&nbsp;zaopiekowanie się maluchem. Ale są też maluchy, które drugiej szansy nie dostają. We współpracy z&nbsp;Sądem Rodzinnym chcemy pomóc jak najszybciej uregulować ich sytuację prawną i&nbsp;znaleźć ciepły, kochający dom.</p>
-				<p><strong>Planujemy rozpocząć budowę ośrodka jesienią tego roku, by już w&nbsp;2024 roku rozpocząć jego działalność. To będzie pierwszy na Dolnym Śląsku i&nbsp;trzeci w&nbsp;Polsce takie miejsce. Potrzeba wielu wrażliwych i&nbsp;mądrych dorosłych, by ten projekt udźwignąć i&nbsp;zrealizować z&nbsp;sukcesem.</strong></p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354124/d7a8b41e-49c0-49d6-b317-c87882eb9d10.png" alt="Fundacja Embrace" />
-				</div>			
-				<h3><a href="https://fundacjaembrace.pl/charity-event/" target="blank">Fundacja Embrace</a></h3>
-				<p><strong>Niesienie pomocy innym zawsze było mi bardzo bliskie i&nbsp;stanowiło ważny aspekt mojego życia. To cudowne uczucie, gdy jesteś w&nbsp;stanie zrobić coś dla drugiego człowieka.</strong> Gdy to właśnie Twoje dwie ręce podarowały komuś nowe, lepsze życie lub Twoje działania wyzwoliły w&nbsp;drugiej osobie chęć do walki, do pracy, do niegodzenia się na niekiedy okrutny los. Każdy z&nbsp;nas posiada w&nbsp;sobie niespożyte zasoby energii, jednak nie każdy ma to szczęście spotkać na drodze dobre osoby, które pomogą mu w&nbsp;jej wyzwoleniu.</p>
-				<p>Ja miałam tę możliwość i&nbsp;chciałabym przekazać ją dalej. Szczególnie że sama tego doświadczyłam. Byłam samotną mamą, która szukała pomocy. Wiem, z&nbsp;czym mierzą się takie kobiety i&nbsp;jakie uczucia im towarzyszą. Mi udało się wyjść z&nbsp;trudnej sytuacji. Teraz chcę pomóc innym, ale nie tylko wspierając finansowo. <strong>Ważne jest też wsparcie niematerialne, wskazanie możliwości oraz pomoc w&nbsp;odnalezieniu motywacji do działania. Właśnie dlatego powstała Fundację Embrace.</strong> Aby dawać szanse, pokazywać, że można, inspirować, motywować, rozwijać przez organizowane warsztaty, kursy, szkolenia i&nbsp;spotkania, ale też oferować wsparcie prawne, psychologiczne i&nbsp;doradztwo od najlepszych specjalistów. Udało mi się poznać i&nbsp;zrzeszyć kobiety, które miały podobne wartości i&nbsp;od początku 2022 roku działamy razem dla innych kobiet.</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354154/d159f63f-c531-4196-8f8a-097feda326e5.png" alt="Fundacja Rodziny Maj" />
-				</div>			
-				<h3><a href="https://fundacjarodzinymaj.pl/" target="blank">Fundacja Rodziny Maj</a></h3>
-				<p><strong>Pomagaliśmy od samego początku. Po cichu i&nbsp;w ukryciu. Przez długi czas obawialiśmy się opinii takich, których stać na luksus pomagania, bo sami mają świetlane życie. Marzyliśmy o&nbsp;założeniu fundacji, która ułatwiłaby nasze działania, lecz obawy o&nbsp;odbiór społeczny „skutecznie” nas powstrzymywały. A chcieliśmy tylko jednego – po prostu pomagać.</strong></p>
-				<p>Życie to fala, wzbijająca się i&nbsp;opadająca. Śmierć Piotra, mojego ukochanego szwagra, nie mogła być końcem. Wyrwała nam serca z&nbsp;piersi, ale to właśnie ten ból skłonił nas do czynu i&nbsp;do przekraczania własnych lęków.<br/>Tak właśnie narodziła się Fundacja Rodziny Maj imienia Piotra Maja.</p>
-				<p>Nie przesadzę, mówiąc, że kocham pomagać. Moje serce bije w&nbsp;rytm empatii, głęboko zakorzenionej w&nbsp;potrzebie działania. Gdy wojna rozpętała się w&nbsp;Ukrainie, nie mogłam siedzieć bezczynnie. Byłam gotowa ruszyć, niezależnie od godziny, niezależnie od zmęczenia. i&nbsp;zrobiliśmy to. </p>
-				<p><strong>Nasza fundacja nie zna granic.</strong> Wspieraliśmy ofiary pożarów, chorych, biednych i&nbsp;bezdomnych. Jednak dzieci są mi szczególnie bliskie. Niesienie pomocy maluchom onkologicznym, także nieuleczalnie chorym, jest tym, co pomaga mi utrzymywać serce w&nbsp;jednym kawałku.</p>
-				<p>Bardzo zależy naszej Fundacji na wsparciu Oddziału Onkologii i&nbsp;Hematologii Dziecięcej Szpitala Dziecięcego w&nbsp;Krakowie. Wiem, jak ogromną determinację, by ratować życie, mają osoby tam pracujące. i&nbsp;wiem, jakiego wsparcia potrzebują, by móc w&nbsp;pełni rozwinąć skrzydła. Świadomość, że można ulżyć w&nbsp;cierpieniu, a&nbsp;nawet podnieść szanse na życie chociaż jednego dziecka – nie pozwala mi na bycie bierną. A ponieważ zawsze jest dobry moment, aby dołączyć i&nbsp;razem z&nbsp;nami pomagać, to poruszę niebo i&nbsp;ziemię, by zapewnić dzieciom leczenie na jak najwyższym poziomie.</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354223/92a14b18-8705-4c0c-900c-1fd201111d20.png" alt="Fundacja MRM" />
-				</div>			
-				<h3><a href="https://mrmfundacja.pl/" target="blank">Fundacja MRM</a></h3>
-				<p>Byłam jedną z&nbsp;Was. Moim marzeniem było zostać mamą. Dzięki in vitro mi się udało. Rodzicielstwo może być najpiękniejszą przygodą życia, jednak wiele par o&nbsp;tę przygodę musi zawalczyć…</p>
-				<p>Moja walka zakończyła się zwycięstwem - dlatego dziś czuję, że moim obowiązkiem i&nbsp;misją stało się wspieranie innych w&nbsp;walce z&nbsp;niepłodnością. Wiem, że upowszechnienie i&nbsp;odkłamanie tematu in vitro ułatwi przyszłym rodzicom korzystanie z&nbsp;najnowszych osiągnięć nauki. Niepłodność dotyka już 1,5 miliona polskich par – zarówno mężczyzn, jak i&nbsp;kobiet.</p>
-				<p>Dlatego jestem.<br/>
-				Dlatego działam.<br/>
-				Dlatego powstała Fundacja MRM.<br/>
-				Jako Mama, kobieta - chcę promować macierzyństwo, rodzicielstwo, chcę zabiegać o&nbsp;pomoc państwa w&nbsp;tym zakresie.</p>
-				<p>Nasza Fundacja działa na rzecz wyrównywania dostępu do specjalistycznych usług medycznych. Inicjujemy, promujemy i&nbsp;wspieramy projekty edukacyjne, umożliwiające rozpoznawanie płodności oraz leczenie niepłodności. Jesteśmy współinicjatorami Projektu Obywatelskiego "TAK dla In Vitro, In Vitro to LUDZIE", który już wkrótce trafi pod sejmowe głosowanie. O&nbsp;niepłodności i&nbsp;in vitro mówimy głośno, zachęcając innych do tego samego. Chcemy skończyć z&nbsp;tabu i&nbsp;przywrócić powszechny dostęp do najskuteczniejszego leczenia niepłodności w&nbsp;Polsce.</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354121/dfcabc9a-b36e-4e41-8ca5-628bf3398de1.png" alt="Stowarzyszenie Czysta Polska" />
-				</div>			
-				<h3><a href="https://czystapolska.org.pl/" target="blank">Stowarzyszenie Czysta Polska</a></h3>
-				<p><strong>Stowarzyszenie Czysta Polska narodziło się z&nbsp;inicjatywy i&nbsp;chęci działania jednego człowieka - Rafała Sonika, który w&nbsp;2012 roku zabrał w&nbsp;Tatry swoich przyjaciół, chcąc im pokazać piękno naszych gór.</strong></p>
-				<p>Jednak zamiast dumy, poczuł wstyd. Podczas wędrówki tatrzańskimi szlakami na każdym kroku towarzyszyły im śmieci. Takiego stanu nie potrafił zaakceptować i&nbsp;postanowił to zmienić. Zaprosił do uprzątnięcia Tatr swoich przyjaciół, współpracowników oraz całe środowisko Podhala.</p>
-				<p>Blisko 1000 osób wyniosło wówczas ze szlaków około półtorej tony śmieci. Tak powstał pierwszy i&nbsp;flagowy projekt Stowarzyszenia - Czyste Tatry, a&nbsp;niedługo po nim założone zostało Stowarzyszenie. Historia ta jest przykładem działania efektu kuli śniegowej.</p>
-				<p><strong>To co wynikało z&nbsp;potrzeby chwili Rafała Sonika przerodziło się w&nbsp;inicjatywę, która zgromadziła do dziś blisko 40 tysięcy wolontariuszy i&nbsp;która dała początek innym edukacyjnym, zmieniającym świadomość ekologiczną projektom - Czysty Bałtyk oraz Czyste Lasy. Są to dziś największe wydarzenia o&nbsp;tematyce ekologicznej w&nbsp;Polsce.</strong></p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354127/6174ae82-c98a-4c23-8832-ab112dd5f376.png" alt="Fundacja The Good People" />
-				</div>			
-				<h3><a href="https://www.pomagamyzsercem.pl/" target="blank">Fundacja The Good People</a></h3>
-				<p><strong>Fundacja The Good People powstała w&nbsp;lutym 2023 roku jako organizacja bez działalności gospodarczej. Głównym celem fundacji jest pomaganie w&nbsp;ramach organizowanych akcji charytatywnych poprzez aplikację POMAGAMY z&nbsp;SERCEM.</strong></p>
-				<p>Sukcesem zakończyły się już 2 akcje "Zamieniamy KM na ZŁ" z&nbsp;których 122 000 zł zostało przeznaczone na dziecięcą psychiatrię.</p>
-				<p>"Stworzyliśmy darmową aplikację aby pomaganie było proste i&nbsp;bez kosztów. Zapraszamy do współpracy firmy, instytucje, organizacje i&nbsp;osoby prywatne. W&nbsp;ramach współpracy oferujemy nasze doświadczenie i&nbsp;darmową pracę."</p>
-				<span class="signature">Artur Szcześniak - prezes zarządu Fundacji The Good People</span>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354238/3a58dd5b-3c3e-4a50-801a-1cba01ba644c.png" alt="Fundacja One Day" />
-				</div>			
-				<h3><a href="https://www.oneday.com.pl/" target="blank">Fundacja One Day</a></h3>
-				<p><strong>Fundacja One Day powstała z&nbsp;własnych doświadczeń. Założycielka fundacji pierwsze lata swojego życia spędziła w&nbsp;domu dziecka, a&nbsp;później w&nbsp;rodzinie zastępczej. To właśnie ta historia sprawiła, że dziś chce wspierać młodzież i&nbsp;dzieci z&nbsp;pieczy zastępczej, domów dziecka, placówek opiekuńczo-wychowawczych, w&nbsp;procesie usamodzielnienia czyli momencie wyjścia z&nbsp;pieczy - tego nieuniknionego, choć trudnego dnia w&nbsp;życiu wychowanka.</strong></p>
-				<p>Fundacja jest tworzona wspólnie z&nbsp;podopiecznymi, każdy projekt jest omawiany z&nbsp;naszymi liderami, osobami, które przez lata pracy z&nbsp;nami zmieniły już swoje życie.</p>
-				<p>Według One Day w&nbsp;samodzielności liczy się zdrowie psychiczne, które daje prawdziwą siłę, to je wspieramy w&nbsp;każdym projekcie. Przez cały rok organizujemy szereg działań, które mają swoją kontynuację i&nbsp;prowadzą podopiecznych krok po kroku w&nbsp;stronę rozwoju i&nbsp;poznania siebie.</p>
-				<p>Wierzymy że czasem jedno spotkanie, jedna rozmowa, jedna decyzja i&nbsp;jeden dzień może zmienić wszystko. Wsparcie i&nbsp;okazanie ważności dla tych młodych dorosłych to bardzo zapomniana i&nbsp;ważna kwestia w&nbsp;Polskim społeczeństwie gdyż co roku około 6 tyś młodych ludzi zmaga się z&nbsp;myślą czy sobie poradzą…</p>
-				<p><strong>Jako organizacja OPP dajemy szansę, by dzieci czuły się w&nbsp;tej drodze pewniej, a&nbsp;skuteczność naszych działań obserwujemy już od 9 lat.</strong></p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354130/d790c53d-163e-43ee-9eec-1cbea8b1f05a.png" alt="Fundacja Horyzont 360" />
-				</div>			
-				<h3><a href="https://www.fundacjahoryzont360.pl/" target="blank">Fundacja Horyzont 360</a></h3>
-				<p><strong>Młodzi ludzie troszczą się o&nbsp;świat przyrody, a&nbsp;my patrząc na obecne zanieczyszczenia, widzimy ich obciążenie. Chcemy im dać nadzieję i&nbsp;inspirację - i&nbsp;jesteśmy gotowi działać. Fundacja Horyzont360 powstała, aby chronić i&nbsp;rozwijać obszar Jeziora Rożnowskiego. Wspieramy inicjatywy edukacyjne proekologiczne dla młodzieży województwa Małopolskiego.</strong><br/>
-				Spotykamy wiele inspirujących osób, które jak my chcą zmieniać świat. Porusza nas obraz młodych wojowników o&nbsp;czyste środowisko - często walczących samotnie. Nasz główny cel to pomoc młodym ludziom i&nbsp;lokalnym inicjatywom proekologicznym.</p>
-				<p>Fundacja Horyzont360, organizacja non-profit założona w&nbsp;2016 roku przez Pana Andrzeja Wiśniowskiego, dba o&nbsp;ochronę obszaru jeziora i&nbsp;rozwój turystyki. Pozyskujemy fundusze i&nbsp;realizujemy projekty edukacyjne, w&nbsp;tym Eko Małopolska i&nbsp;Eko-świadomi młodzi obywatele Małopolski. Poprzez to promujemy świadomość ekologiczną i&nbsp;gospodarowanie zasobami naturalnymi.</p>
-				<p>Wspieramy również Program Działaj Lokalnie, który finansuje oddolne, lokalne inicjatywy ekologiczne, naukowe i&nbsp;kulturalne. Naszym najważniejszym projektem edukacyjnym jest natomiast Naukowa Wioska, gdzie młodzi ludzie mogą eksperymentować i&nbsp;tworzyć prototypy swoich rozwiązań. Wspieramy młode talenty, które mają potencjał zmieniać świat technologicznie</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354382/eb6f74cd-f1ea-4869-96ec-ae60d2190f34.png" alt="Czepczyński Family Foundation" />
-				</div>			
-				<h3><a href="https://cff.edu.pl/" target="blank">CFF (Czepczyński Family Foundation)</a></h3>
-				<p><strong>Edukację powinna ograniczać jedynie dziecięca wyobraźnia". To motto przyświeca działaniom naszej Fundacji, której założycielem jest Pan Artur Czepczyński.</strong> Uważa On bowiem, że każde dziecko powinno mieć możliwość rzetelnej i&nbsp;jak najlepszej jakościowo edukacji. Dlatego już od ponad 4 lat CFF stara się wdrażać w&nbsp;placówkach oświatowych projekty ABC-Ekonomii i&nbsp;ABC-Empatii.<br/>
-				Projekty powstałe z&nbsp;potrzeby serca, będące odpowiedzią na prośby nauczycieli, rodziców, a przede wszystkim dzieci. To one bowiem są beneficjentami warsztatów i&nbsp;lekcji. Wierzymy, że zmiany strukturalne pozwolą nam na zwiększenie wiedzy z&nbsp;zakresu ekonomii, finansów i&nbsp;przedsiębiorczości, a także zbudowanie bardziej empatycznego społeczeństwa.</p>
-				<p>Każde dziecko, niezależnie od statusu materialnego, miejsca zamieszkania, wiary, koloru skóry czy kraju pochodzenia ma prawo do bycia dzieckiem i&nbsp;by poprzez zabawę uczyć się tematów z&nbsp;świata dorosłego. Dziś jesteśmy obecni w&nbsp;ponad 2500 placówkach w&nbsp;Polsce i&nbsp;200 w&nbsp;Unii Europejskiej. <strong>Naszym celem jest jednak by każde dziecko mogło edukować się, bawić, a w&nbsp;przyszłości podejmować właściwe wybory i&nbsp;oceniać innych z&nbsp;empatią i&nbsp;zrozumieniem.</strong></p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354142/c3eff2d9-646c-4dc7-8d7b-50604a04051d.png" alt="Fundacja KONTEKST" />
-				</div>			
-				<h3><a href="https://fundacjakontekst.pl/" target="blank">Fundacja KONTEKST</a></h3>			
-				<p><strong>Od lat szkolimy polskich psychoterapeutów i&nbsp;terapeutów rodzin!</strong><br/>
-				Ostatnie lata coraz boleśniej pokazują nam jak istotnie wzrastają potrzeby zdrowotne dzieci, młodzieży i&nbsp;ich rodzin w&nbsp;odniesieniu do ich dobrostanu psychicznego! Okazuje się również, że do skutecznego pomagania w&nbsp;sytuacjach kryzysowych, związanych z&nbsp;istotnym bólem i&nbsp;cierpieniem emocjonalnym, potrzebni są wyszkoleni i&nbsp;umiejętni specjaliści zajmujący się zdrowiem psychicznym. Co więcej, bez nadmiernej przesady możemy sparafrazować znane afrykańskie przysłowie i&nbsp;powiedzieć, że "potrzeba całej wioski, żeby pomóc dziecku i&nbsp;rodzinie, którzy mierzą się z&nbsp;problemem natury emocjonalnej czy psychicznej". Trudno nam zatem jeszcze mocniej podkreślić, jak istotna jest dostępność i&nbsp;gotowość do niesienia pomocy psychoterapeutów i&nbsp;terapeutów rodzinnych dla dzieci i&nbsp;rodzin potrzebujących pomocy.<br/>
-				To właśnie z&nbsp;tej potrzeby powstała Fundacja KONTEKST na Rzecz Rozwoju Psychoterapii i&nbsp;Terapii Rodzin, która za jeden z&nbsp;głównych celów swojej działalności stawia szkolenie specjalistów w&nbsp;zakresie psychoterapii oraz prowadzenie szeroko zakrojonych działań zmierzających w&nbsp;stronę stymulowania rozwoju tego obszaru pracy klinicznej. Oprócz prowadzenia 5-letnich szkoleń w&nbsp;zakresie psychoterapii i&nbsp;terapii rodzin, które umożliwiają wykonywanie zawodu psychoterapeuty, Fundacja wspiera również szkolących się psychoterapeutów poprzez organizację seminariów, grupowych superwizji oraz cyklicznych konferencji. <strong>Robimy to po to, żeby zwiększać dostępność psychoterapii i&nbsp;pomocy psychologicznej dla potrzebujących dzieci, młodzieży i&nbsp;ich rodzin.</strong></p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354115/d238f375-c7dc-4c32-a739-b6c60de9d6a6.png" alt="" />
-				</div>			
-				<h3><a href="https://rafalbrzoskafoundation.org/" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354118/b2d29e9a-f682-4281-b7ce-02820efc0185.png" alt="" />
-				</div>			
-				<h3><a href="https://www.aflofarm.com.pl/pl/csr/fundacja/" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>							
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354133/acb8ede8-3750-4ba7-883f-15ea9e8ab3e3.png" alt="" />
-				</div>			
-				<h3><a href="https://inpost.pl/fundacja-inpost" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354136/b3c924a5-529f-455e-909e-b70b0d5df706.png" alt="" />
-				</div>			
-				<h3><a href="http://www.inteligentny-start.org/" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354139/d290a9e0-305c-4cbd-ab0b-ee3fdebd183d.png" alt="" />
-				</div>			
-				<h3><a href="https://www.facebook.com/intercarsfoundation" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>		
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354145/98694827-9c37-4cdd-a9e3-701921168e43.png" alt="" />
-				</div>			
-				<h3><a href="https://letshelptogether.pl/" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>		
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354151/7fcc7caf-69a6-43d4-8445-7e40bc76c8f5.png" alt="" />
-				</div>			
-				<h3><a href="https://omenaartfoundation.com" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>		
-		<div class="organization">			
-			<div class="description">
-				<div class="logo">
-					<img src="https://img.siepomaga.pl/uploads/attached_image/photo/354157/4ec01fae-d704-4cf0-9f2c-1bff054f5679.png" alt="" />
-				</div>			
-				<h3><a href="https://uskrzydlamy.org/" target="blank">Nazwa</a></h3>			
-				<p>opis</p>
-			</div>
-			<button class="more">Pokaż więcej</button>
-		</div>		
-	</div>
+<div id="organizations">
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354148/c7fe25a8-2975-402f-a2cf-95f94370b031.png" alt="Fundacja Im. Ks. Kanonika Zdzisława Sobierajskiego Nos Duo" /> </div>
+            <h3><a href="https://www.facebook.com/nosduoostrzeszow/" target="blank">Fundacja Im. Ks. Kanonika Zdzisława Sobierajskiego Nos Duo</a></h3>
+            <p><strong>Twarze ludzi, którym pomagamy, nie są mi obce. Wiem, jaki ciężar niosą przez życie. Jeśli mogę podarować ulgę, wytchnienie, jestem gotowa działać.</strong></p>
+            <p>Fundacja Nos Duo powstała 6 lat temu. To była piękna odpowiedź mojego teścia na wołanie potrzeby jego serca. Naszą drogę rozpoczęliśmy od pomocy osobom starszym. W&nbsp;ciągu tych kilku lat udało się również pomóc wielu dzieciom, matkom, rodzinom z&nbsp;naszej okolicy. Czasami Potrzebujący zgłaszają się sami, czasami znajdujemy ich my. Bo nie każdy ma odwagę podejść, porozmawiać, poprosić o&nbsp;pomoc. Zdarza się, że to my pukamy do ich drzwi.</p>
+            <p><strong>Towarzyszy mi wiele inspirujących kobiet, tych, które jak ja czerpią energię ze zmieniania świata, jak i&nbsp;tych, których codzienność wymaga wsparcia.</strong> Porusza mnie dogłębnie obraz kobiety poświęcającej swoje życie opiece nad chorym dzieckiem. Znam historie, gdy taka kobieta koniec końców zostaje sama – bez dziecka i&nbsp;odklejona od siebie. Wyzerowana. Chciałabym móc pojawić się gdzieś na ścieżce walki takiej kobiety - opiekunki. Podarować jej wytchnienie, nadzieję, wsparcie.</p>
+            <p><strong>To mój wymarzony projekt. Czas, podczas którego pomagamy dzieciakom, ale również mamom, kobietom, żonom, przyjaciółkom… człowiekowi… bohaterkom dnia codziennego.</strong> Dawać poczucie, że je widzimy, że są dla naszej społeczności ważne, są jej nieodłączną i&nbsp;piękna częścią. Zatroszczyć się o&nbsp;nie i&nbsp;w imieniu ich dzieci powiedzieć „dziękuję”.”</p>
+            <span class="signature">Marta Raczyńska-Dejneka - Prezes Fundacji Nos Duo</span> </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354160/6cb6ee4b-2610-4792-a615-cee27eb9676b.png" alt="Fundacja ZOBACZ MNIE" /> </div>
+            <h3><a href="https://zobaczmnie.org/" target="blank">Fundacja ZOBACZ MNIE</a></h3>
+            <p><strong>Każda historia pomocy ma swój początek. Moment, w&nbsp;którym rodzi się myśl, i&nbsp;to ona pewnego dnia pociąga za sobą serię zdarzeń.</strong> Dla mnie było to spotkanie z&nbsp;małym, samotnym chłopcem, który od urodzenia leżał w&nbsp;szpitalu. Nie musiał tam być. Gdyby tylko miał rodzinę, po kilku dniach pobytu mógłby wrócić do domu. No tak, ale najpierw trzeba dom mieć. A ten kilkumiesięczny chłopiec był niczyj i&nbsp;znikąd.</p>
+            <p>Nie mogłam przestać o&nbsp;nim myśleć – do dziś mam jego zdjęcie w&nbsp;telefonie. Postanowiłam nagłośnić tę historię i&nbsp;pomóc znaleźć dla niego rodzinę. Zaangażowałam media – telewizja i&nbsp;radio nadawały całodzienny program i&nbsp;tak znaleźliśmy mamę i&nbsp;tatę dla porzuconego, chorego dziecka. Dziś jego dom jest w&nbsp;Warszawie, a&nbsp;ja razem z&nbsp;fundacyjnym zespołem staram wspomóc system w&nbsp;opiece nad opuszczonymi noworodkami i&nbsp;niemowlętami.</p>
+            <p><strong>Interwencyjny Ośrodek Preadopcyjny to nie jest dobra nazwa. Ja powiedziałabym „Pierwszy Dom”.</strong></p>
+            <p>Razem z&nbsp;zespołem wspaniałych specjalistów zapewnimy najwyższe standardy opieki, diagnostyki i&nbsp;wsparcia dzieci w&nbsp;okresie, w&nbsp;którym są zupełnie bezbronne i&nbsp;potrzebują największej czułości.</p>
+            <p>Biologicznym mamom, które nie podołały swojej nowej roli, zapewnimy wsparcie psychologiczne i&nbsp;mentalne. Okazana cierpliwość i&nbsp;wypracowany wzorzec opieki dadzą szansę, że po pierwszym szoku jednak będą gotowe na stworzenie rodziny i&nbsp;zaopiekowanie się maluchem. Ale są też maluchy, które drugiej szansy nie dostają. We współpracy z&nbsp;Sądem Rodzinnym chcemy pomóc jak najszybciej uregulować ich sytuację prawną i&nbsp;znaleźć ciepły, kochający dom.</p>
+            <p><strong>Planujemy rozpocząć budowę ośrodka jesienią tego roku, by już w&nbsp;2024 roku rozpocząć jego działalność. To będzie pierwszy na Dolnym Śląsku i&nbsp;trzeci w&nbsp;Polsce takie miejsce. Potrzeba wielu wrażliwych i&nbsp;mądrych dorosłych, by ten projekt udźwignąć i&nbsp;zrealizować z&nbsp;sukcesem.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354124/d7a8b41e-49c0-49d6-b317-c87882eb9d10.png" alt="Fundacja Embrace" /> </div>
+            <h3><a href="https://fundacjaembrace.pl/charity-event/" target="blank">Fundacja Embrace</a></h3>
+            <p><strong>Niesienie pomocy innym zawsze było mi bardzo bliskie i&nbsp;stanowiło ważny aspekt mojego życia. To cudowne uczucie, gdy jesteś w&nbsp;stanie zrobić coś dla drugiego człowieka.</strong> Gdy to właśnie Twoje dwie ręce podarowały komuś nowe, lepsze życie lub Twoje działania wyzwoliły w&nbsp;drugiej osobie chęć do walki, do pracy, do niegodzenia się na niekiedy okrutny los. Każdy z&nbsp;nas posiada w&nbsp;sobie niespożyte zasoby energii, jednak nie każdy ma to szczęście spotkać na drodze dobre osoby, które pomogą mu w&nbsp;jej wyzwoleniu.</p>
+            <p>Ja miałam tę możliwość i&nbsp;chciałabym przekazać ją dalej. Szczególnie że sama tego doświadczyłam. Byłam samotną mamą, która szukała pomocy. Wiem, z&nbsp;czym mierzą się takie kobiety i&nbsp;jakie uczucia im towarzyszą. Mi udało się wyjść z&nbsp;trudnej sytuacji. Teraz chcę pomóc innym, ale nie tylko wspierając finansowo. <strong>Ważne jest też wsparcie niematerialne, wskazanie możliwości oraz pomoc w&nbsp;odnalezieniu motywacji do działania. Właśnie dlatego powstała Fundację Embrace.</strong> Aby dawać szanse, pokazywać, że można, inspirować, motywować, rozwijać przez organizowane warsztaty, kursy, szkolenia i&nbsp;spotkania, ale też oferować wsparcie prawne, psychologiczne i&nbsp;doradztwo od najlepszych specjalistów. Udało mi się poznać i&nbsp;zrzeszyć kobiety, które miały podobne wartości i&nbsp;od początku 2022 roku działamy razem dla innych kobiet.</p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354154/d159f63f-c531-4196-8f8a-097feda326e5.png" alt="Fundacja Rodziny Maj" /> </div>
+            <h3><a href="https://fundacjarodzinymaj.pl/" target="blank">Fundacja Rodziny Maj</a></h3>
+            <p><strong>Pomagaliśmy od samego początku. Po cichu i&nbsp;w ukryciu. Przez długi czas obawialiśmy się opinii takich, których stać na luksus pomagania, bo sami mają świetlane życie. Marzyliśmy o&nbsp;założeniu fundacji, która ułatwiłaby nasze działania, lecz obawy o&nbsp;odbiór społeczny „skutecznie” nas powstrzymywały. A chcieliśmy tylko jednego – po prostu pomagać.</strong></p>
+            <p>Życie to fala, wzbijająca się i&nbsp;opadająca. Śmierć Piotra, mojego ukochanego szwagra, nie mogła być końcem. Wyrwała nam serca z&nbsp;piersi, ale to właśnie ten ból skłonił nas do czynu i&nbsp;do przekraczania własnych lęków.<br/>
+                Tak właśnie narodziła się Fundacja Rodziny Maj imienia Piotra Maja.</p>
+            <p>Nie przesadzę, mówiąc, że kocham pomagać. Moje serce bije w&nbsp;rytm empatii, głęboko zakorzenionej w&nbsp;potrzebie działania. Gdy wojna rozpętała się w&nbsp;Ukrainie, nie mogłam siedzieć bezczynnie. Byłam gotowa ruszyć, niezależnie od godziny, niezależnie od zmęczenia. i&nbsp;zrobiliśmy to. </p>
+            <p><strong>Nasza fundacja nie zna granic.</strong> Wspieraliśmy ofiary pożarów, chorych, biednych i&nbsp;bezdomnych. Jednak dzieci są mi szczególnie bliskie. Niesienie pomocy maluchom onkologicznym, także nieuleczalnie chorym, jest tym, co pomaga mi utrzymywać serce w&nbsp;jednym kawałku.</p>
+            <p>Bardzo zależy naszej Fundacji na wsparciu Oddziału Onkologii i&nbsp;Hematologii Dziecięcej Szpitala Dziecięcego w&nbsp;Krakowie. Wiem, jak ogromną determinację, by ratować życie, mają osoby tam pracujące. i&nbsp;wiem, jakiego wsparcia potrzebują, by móc w&nbsp;pełni rozwinąć skrzydła. Świadomość, że można ulżyć w&nbsp;cierpieniu, a&nbsp;nawet podnieść szanse na życie chociaż jednego dziecka – nie pozwala mi na bycie bierną. A ponieważ zawsze jest dobry moment, aby dołączyć i&nbsp;razem z&nbsp;nami pomagać, to poruszę niebo i&nbsp;ziemię, by zapewnić dzieciom leczenie na jak najwyższym poziomie.</p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354223/92a14b18-8705-4c0c-900c-1fd201111d20.png" alt="Fundacja MRM" /> </div>
+            <h3><a href="https://mrmfundacja.pl/" target="blank">Fundacja MRM</a></h3>
+            <p>Byłam jedną z&nbsp;Was. Moim marzeniem było zostać mamą. Dzięki in vitro mi się udało. Rodzicielstwo może być najpiękniejszą przygodą życia, jednak wiele par o&nbsp;tę przygodę musi zawalczyć…</p>
+            <p>Moja walka zakończyła się zwycięstwem - dlatego dziś czuję, że moim obowiązkiem i&nbsp;misją stało się wspieranie innych w&nbsp;walce z&nbsp;niepłodnością. Wiem, że upowszechnienie i&nbsp;odkłamanie tematu in vitro ułatwi przyszłym rodzicom korzystanie z&nbsp;najnowszych osiągnięć nauki. Niepłodność dotyka już 1,5 miliona polskich par – zarówno mężczyzn, jak i&nbsp;kobiet.</p>
+            <p>Dlatego jestem.<br/>
+                Dlatego działam.<br/>
+                Dlatego powstała Fundacja MRM.<br/>
+                Jako Mama, kobieta - chcę promować macierzyństwo, rodzicielstwo, chcę zabiegać o&nbsp;pomoc państwa w&nbsp;tym zakresie.</p>
+            <p>Nasza Fundacja działa na rzecz wyrównywania dostępu do specjalistycznych usług medycznych. Inicjujemy, promujemy i&nbsp;wspieramy projekty edukacyjne, umożliwiające rozpoznawanie płodności oraz leczenie niepłodności. Jesteśmy współinicjatorami Projektu Obywatelskiego "TAK dla In Vitro, In Vitro to LUDZIE", który już wkrótce trafi pod sejmowe głosowanie. O&nbsp;niepłodności i&nbsp;in vitro mówimy głośno, zachęcając innych do tego samego. Chcemy skończyć z&nbsp;tabu i&nbsp;przywrócić powszechny dostęp do najskuteczniejszego leczenia niepłodności w&nbsp;Polsce.</p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354121/dfcabc9a-b36e-4e41-8ca5-628bf3398de1.png" alt="Stowarzyszenie Czysta Polska" /> </div>
+            <h3><a href="https://czystapolska.org.pl/" target="blank">Stowarzyszenie Czysta Polska</a></h3>
+            <p><strong>Stowarzyszenie Czysta Polska narodziło się z&nbsp;inicjatywy i&nbsp;chęci działania jednego człowieka - Rafała Sonika, który w&nbsp;2012 roku zabrał w&nbsp;Tatry swoich przyjaciół, chcąc im pokazać piękno naszych gór.</strong></p>
+            <p>Jednak zamiast dumy, poczuł wstyd. Podczas wędrówki tatrzańskimi szlakami na każdym kroku towarzyszyły im śmieci. Takiego stanu nie potrafił zaakceptować i&nbsp;postanowił to zmienić. Zaprosił do uprzątnięcia Tatr swoich przyjaciół, współpracowników oraz całe środowisko Podhala.</p>
+            <p>Blisko 1000 osób wyniosło wówczas ze szlaków około półtorej tony śmieci. Tak powstał pierwszy i&nbsp;flagowy projekt Stowarzyszenia - Czyste Tatry, a&nbsp;niedługo po nim założone zostało Stowarzyszenie. Historia ta jest przykładem działania efektu kuli śniegowej.</p>
+            <p><strong>To co wynikało z&nbsp;potrzeby chwili Rafała Sonika przerodziło się w&nbsp;inicjatywę, która zgromadziła do dziś blisko 40 tysięcy wolontariuszy i&nbsp;która dała początek innym edukacyjnym, zmieniającym świadomość ekologiczną projektom - Czysty Bałtyk oraz Czyste Lasy. Są to dziś największe wydarzenia o&nbsp;tematyce ekologicznej w&nbsp;Polsce.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354127/6174ae82-c98a-4c23-8832-ab112dd5f376.png" alt="Fundacja The Good People" /> </div>
+            <h3><a href="https://www.pomagamyzsercem.pl/" target="blank">Fundacja The Good People</a></h3>
+            <p><strong>Fundacja The Good People powstała w&nbsp;lutym 2023 roku jako organizacja bez działalności gospodarczej. Głównym celem fundacji jest pomaganie w&nbsp;ramach organizowanych akcji charytatywnych poprzez aplikację POMAGAMY z&nbsp;SERCEM.</strong></p>
+            <p>Sukcesem zakończyły się już 2 akcje "Zamieniamy KM na ZŁ" z&nbsp;których 122 000 zł zostało przeznaczone na dziecięcą psychiatrię.</p>
+            <p>"Stworzyliśmy darmową aplikację aby pomaganie było proste i&nbsp;bez kosztów. Zapraszamy do współpracy firmy, instytucje, organizacje i&nbsp;osoby prywatne. W&nbsp;ramach współpracy oferujemy nasze doświadczenie i&nbsp;darmową pracę."</p>
+            <span class="signature">Artur Szcześniak - prezes zarządu Fundacji The Good People</span> </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354238/3a58dd5b-3c3e-4a50-801a-1cba01ba644c.png" alt="Fundacja One Day" /> </div>
+            <h3><a href="https://www.oneday.com.pl/" target="blank">Fundacja One Day</a></h3>
+            <p><strong>Fundacja One Day powstała z&nbsp;własnych doświadczeń. Założycielka fundacji pierwsze lata swojego życia spędziła w&nbsp;domu dziecka, a&nbsp;później w&nbsp;rodzinie zastępczej. To właśnie ta historia sprawiła, że dziś chce wspierać młodzież i&nbsp;dzieci z&nbsp;pieczy zastępczej, domów dziecka, placówek opiekuńczo-wychowawczych, w&nbsp;procesie usamodzielnienia czyli momencie wyjścia z&nbsp;pieczy - tego nieuniknionego, choć trudnego dnia w&nbsp;życiu wychowanka.</strong></p>
+            <p>Fundacja jest tworzona wspólnie z&nbsp;podopiecznymi, każdy projekt jest omawiany z&nbsp;naszymi liderami, osobami, które przez lata pracy z&nbsp;nami zmieniły już swoje życie.</p>
+            <p>Według One Day w&nbsp;samodzielności liczy się zdrowie psychiczne, które daje prawdziwą siłę, to je wspieramy w&nbsp;każdym projekcie. Przez cały rok organizujemy szereg działań, które mają swoją kontynuację i&nbsp;prowadzą podopiecznych krok po kroku w&nbsp;stronę rozwoju i&nbsp;poznania siebie.</p>
+            <p>Wierzymy że czasem jedno spotkanie, jedna rozmowa, jedna decyzja i&nbsp;jeden dzień może zmienić wszystko. Wsparcie i&nbsp;okazanie ważności dla tych młodych dorosłych to bardzo zapomniana i&nbsp;ważna kwestia w&nbsp;Polskim społeczeństwie gdyż co roku około 6 tyś młodych ludzi zmaga się z&nbsp;myślą czy sobie poradzą…</p>
+            <p><strong>Jako organizacja OPP dajemy szansę, by dzieci czuły się w&nbsp;tej drodze pewniej, a&nbsp;skuteczność naszych działań obserwujemy już od 9 lat.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354130/d790c53d-163e-43ee-9eec-1cbea8b1f05a.png" alt="Fundacja Horyzont 360" /> </div>
+            <h3><a href="https://www.fundacjahoryzont360.pl/" target="blank">Fundacja Horyzont 360</a></h3>
+            <p><strong>Młodzi ludzie troszczą się o&nbsp;świat przyrody, a&nbsp;my patrząc na obecne zanieczyszczenia, widzimy ich obciążenie. Chcemy im dać nadzieję i&nbsp;inspirację - i&nbsp;jesteśmy gotowi działać. Fundacja Horyzont360 powstała, aby chronić i&nbsp;rozwijać obszar Jeziora Rożnowskiego. Wspieramy inicjatywy edukacyjne proekologiczne dla młodzieży województwa Małopolskiego.</strong><br/>
+                Spotykamy wiele inspirujących osób, które jak my chcą zmieniać świat. Porusza nas obraz młodych wojowników o&nbsp;czyste środowisko - często walczących samotnie. Nasz główny cel to pomoc młodym ludziom i&nbsp;lokalnym inicjatywom proekologicznym.</p>
+            <p>Fundacja Horyzont360, organizacja non-profit założona w&nbsp;2016 roku przez Pana Andrzeja Wiśniowskiego, dba o&nbsp;ochronę obszaru jeziora i&nbsp;rozwój turystyki. Pozyskujemy fundusze i&nbsp;realizujemy projekty edukacyjne, w&nbsp;tym Eko Małopolska i&nbsp;Eko-świadomi młodzi obywatele Małopolski. Poprzez to promujemy świadomość ekologiczną i&nbsp;gospodarowanie zasobami naturalnymi.</p>
+            <p>Wspieramy również Program Działaj Lokalnie, który finansuje oddolne, lokalne inicjatywy ekologiczne, naukowe i&nbsp;kulturalne. Naszym najważniejszym projektem edukacyjnym jest natomiast Naukowa Wioska, gdzie młodzi ludzie mogą eksperymentować i&nbsp;tworzyć prototypy swoich rozwiązań. Wspieramy młode talenty, które mają potencjał zmieniać świat technologicznie</p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354382/eb6f74cd-f1ea-4869-96ec-ae60d2190f34.png" alt="Czepczyński Family Foundation" /> </div>
+            <h3><a href="https://cff.edu.pl/" target="blank">CFF (Czepczyński Family Foundation)</a></h3>
+            <p><strong>Edukację powinna ograniczać jedynie dziecięca wyobraźnia". To motto przyświeca działaniom naszej Fundacji, której założycielem jest Pan Artur Czepczyński.</strong> Uważa On bowiem, że każde dziecko powinno mieć możliwość rzetelnej i&nbsp;jak najlepszej jakościowo edukacji. Dlatego już od ponad 4 lat CFF stara się wdrażać w&nbsp;placówkach oświatowych projekty ABC-Ekonomii i&nbsp;ABC-Empatii.<br/>
+                Projekty powstałe z&nbsp;potrzeby serca, będące odpowiedzią na prośby nauczycieli, rodziców, a&nbsp;przede wszystkim dzieci. To one bowiem są beneficjentami warsztatów i&nbsp;lekcji. Wierzymy, że zmiany strukturalne pozwolą nam na zwiększenie wiedzy z&nbsp;zakresu ekonomii, finansów i&nbsp;przedsiębiorczości, a&nbsp;także zbudowanie bardziej empatycznego społeczeństwa.</p>
+            <p>Każde dziecko, niezależnie od statusu materialnego, miejsca zamieszkania, wiary, koloru skóry czy kraju pochodzenia ma prawo do bycia dzieckiem i&nbsp;by poprzez zabawę uczyć się tematów z&nbsp;świata dorosłego. Dziś jesteśmy obecni w&nbsp;ponad 2500 placówkach w&nbsp;Polsce i&nbsp;200 w&nbsp;Unii Europejskiej. <strong>Naszym celem jest jednak by każde dziecko mogło edukować się, bawić, a&nbsp;w&nbsp;przyszłości podejmować właściwe wybory i&nbsp;oceniać innych z&nbsp;empatią i&nbsp;zrozumieniem.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354142/c3eff2d9-646c-4dc7-8d7b-50604a04051d.png" alt="Fundacja KONTEKST" /> </div>
+            <h3><a href="https://fundacjakontekst.pl/" target="blank">Fundacja KONTEKST</a></h3>
+            <p><strong>Od lat szkolimy polskich psychoterapeutów i&nbsp;terapeutów rodzin!</strong><br/>
+                Ostatnie lata coraz boleśniej pokazują nam jak istotnie wzrastają potrzeby zdrowotne dzieci, młodzieży i&nbsp;ich rodzin w&nbsp;odniesieniu do ich dobrostanu psychicznego! Okazuje się również, że do skutecznego pomagania w&nbsp;sytuacjach kryzysowych, związanych z&nbsp;istotnym bólem i&nbsp;cierpieniem emocjonalnym, potrzebni są wyszkoleni i&nbsp;umiejętni specjaliści zajmujący się zdrowiem psychicznym. Co więcej, bez nadmiernej przesady możemy sparafrazować znane afrykańskie przysłowie i&nbsp;powiedzieć, że "potrzeba całej wioski, żeby pomóc dziecku i&nbsp;rodzinie, którzy mierzą się z&nbsp;problemem natury emocjonalnej czy psychicznej". Trudno nam zatem jeszcze mocniej podkreślić, jak istotna jest dostępność i&nbsp;gotowość do niesienia pomocy psychoterapeutów i&nbsp;terapeutów rodzinnych dla dzieci i&nbsp;rodzin potrzebujących pomocy.<br/>
+                To właśnie z&nbsp;tej potrzeby powstała Fundacja KONTEKST na Rzecz Rozwoju Psychoterapii i&nbsp;Terapii Rodzin, która za jeden z&nbsp;głównych celów swojej działalności stawia szkolenie specjalistów w&nbsp;zakresie psychoterapii oraz prowadzenie szeroko zakrojonych działań zmierzających w&nbsp;stronę stymulowania rozwoju tego obszaru pracy klinicznej. Oprócz prowadzenia 5-letnich szkoleń w&nbsp;zakresie psychoterapii i&nbsp;terapii rodzin, które umożliwiają wykonywanie zawodu psychoterapeuty, Fundacja wspiera również szkolących się psychoterapeutów poprzez organizację seminariów, grupowych superwizji oraz cyklicznych konferencji. <strong>Robimy to po to, żeby zwiększać dostępność psychoterapii i&nbsp;pomocy psychologicznej dla potrzebujących dzieci, młodzieży i&nbsp;ich rodzin.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354133/acb8ede8-3750-4ba7-883f-15ea9e8ab3e3.png" alt="Fundacja InPost" /> </div>
+            <h3><a href="https://inpost.pl/fundacja-inpost" target="blank">Fundacja InPost</a></h3>
+            <p><strong>InPost tworzą ludzie. To dla nich powstała nasza Fundacja. Chcemy wspierać, rozwijać pasję naszych pracowników.</strong> Chcemy, by mogli zdobywać nowe kompetencje i&nbsp;budować pewność siebie, która pozwala odważnie przeć do przodu i&nbsp;realizować marzenia. Kreatywne myślenie i&nbsp;odwaga to nieodłączne elementy w&nbsp;historii rozwoju naszych usług, chcemy więc w&nbsp;tym zakresie wspierać cały #InPostTeam. Pomagamy również naszym Pracownikom w&nbsp;trudnych sytuacjach losowych oraz w&nbsp;prowadzeniu ich własnych działań charytatywnych.</p>
+            <p><strong>InPost to dziś międzynarodowa organizacja, ale naszą siłą na zawsze pozostanie pielęgnowanie ducha startupu - elastyczność, wykraczanie poza schemat, ciągłe doskonalenie usług i&nbsp;szukanie nowych możliwości. Nigdy nie zapominamy o&nbsp;naszych korzeniach!</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354151/7fcc7caf-69a6-43d4-8445-7e40bc76c8f5.png" alt="Fundacja OmenaArt" /> </div>
+            <h3><a href="https://omenaartfoundation.com" target="blank">Fundacja OmenaArt</a></h3>
+            <p><strong>Fundacja została powołana, żeby sprawować pieczę nad wszystkimi projektami artystycznymi realizowanymi przez Omenaa Foundation oraz Rafał Brzoska Foundation.</strong> Pomysł, by stworzyć OmenaArt Founadation, narodził się jako naturalne następstwo zainteresowań założycielki – Omeny Mensah, która od jest miłośniczką oraz kolekcjonerką sztuki, designu i&nbsp;architektury.<br/>
+                Sztuka jest dla nas również punktem wyjścia do działań filantropijnych. <strong>OmenaArt Founadtion zajmuje się m.in. koordynacją aukcji sztuki, która odbędzie się podczas Wielkiej Aukcji Charytatywnej „TOP CHARITY 2023” i&nbsp;czuwa nad jakością estetyczną wydarzenia. Wszystkie nasze działania mają na celu pozyskanie środków, które przeznaczymy na wsparcie młodych artystów oraz instytucji związanych ze sztuką.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+    <div class="organization">
+        <div class="description">
+            <div class="logo"> <img src="https://img.siepomaga.pl/uploads/attached_image/photo/354115/d238f375-c7dc-4c32-a739-b6c60de9d6a6.png" alt="Rafał Brzoska Foundation" /> </div>
+            <h3><a href="https://rafalbrzoskafoundation.org/" target="blank">Rafał Brzoska Foundation</a></h3>
+            <p><strong>Jestem głęboko przekonany, że pomaganie jest kluczowym elementem człowieczeństwa. Wierzę, że odpowiednie wsparcie dla świadomych, utalentowanych i&nbsp;posiadających aspiracje młodych ludzi może sprawić, że będą mogli się realizować w&nbsp;pełni i&nbsp;zmieniać świat na lepsze.</strong><br/>
+                Fundacja Rafała Brzoski została powołana, aby wspierać młodych utalentowanych i&nbsp;pracowitych ludzi na drodze ich dalszego rozwoju. Swoją misję Fundacja będzie realizowała prowadząc programy edukacyjne i&nbsp;rozwojowe. Pierwszym z&nbsp;nich jest Fundusz Stypendialny. <strong>Celem Funduszu jest wspieranie wyjątkowych, zdolnych młodych ludzi z&nbsp;aspiracjami, potencjałem, pomysłami i&nbsp;pierwszymi osiągnięciami w&nbsp;wybranej dziedzinie. Podopieczni Funduszu otrzymają wyjątkowe i&nbsp;indywidualne wsparcie szyte na miarę ich marzeń.</strong></p>
+        </div>
+        <button class="more">Pokaż więcej</button>
+    </div>
+</div>
 </body>
 </html>
